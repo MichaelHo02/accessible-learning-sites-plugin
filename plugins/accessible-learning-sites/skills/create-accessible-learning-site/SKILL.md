@@ -462,6 +462,11 @@ answer-boundary, privacy, or missing-alternative warnings in the teacher
 handoff. Put one in the student lesson only when the learner needs it to use or
 interpret the content safely.
 
+Treat project-boundary findings about an extra route, missing required kit file,
+or shell/component location or import as implementation failures: fix and rerun
+the check before handoff. Only findings that require a teacher decision may
+remain as warnings.
+
 After the successful build, follow `sites-hosting` and create the Site. Return
 the deployed URL, provisional inferred brief fields, and only the unresolved
 questions or warnings that need the teacher's attention. The teacher can then

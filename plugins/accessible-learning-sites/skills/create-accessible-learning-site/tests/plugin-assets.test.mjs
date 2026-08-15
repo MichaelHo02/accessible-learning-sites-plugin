@@ -1645,6 +1645,7 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
   assert.match(instructions, /document\.documentElement\.scrollWidth <= document\.documentElement\.clientWidth/);
   assert.match(instructions, /Do not set\s+bare MathML to `min-width: max-content`/);
   assert.match(instructions, /Do not create a separate root\s+`index\.html` and stylesheet or a fake build/);
+  assert.match(instructions, /extra route, missing required kit file,\s+or shell\/component location or import as implementation failures/);
   assert.match(instructions, /only for matching kinematics or audio\/transcript work/);
   assert.match(instructions, /Source pagination is provenance, not the default student interface/);
   assert.match(instructions, /do\s+not plan one\s+rendered card, tile, thumbnail, or mini-slide per source page/);
