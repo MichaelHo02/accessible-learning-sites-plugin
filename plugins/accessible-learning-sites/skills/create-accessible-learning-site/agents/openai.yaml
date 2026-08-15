@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Accessible Learning Site"
+  short_description: "Make lesson materials and audio accessible"
+  default_prompt: "Use $create-accessible-learning-site to turn today’s lesson materials or lecture audio into an accessible Site for the whole class."

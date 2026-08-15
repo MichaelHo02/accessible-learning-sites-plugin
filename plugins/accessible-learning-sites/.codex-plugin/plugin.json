@@ -1,0 +1,44 @@
+{
+  "name": "accessible-learning-sites",
+  "version": "0.1.0+codex.20260721173134",
+  "description": "Turn one teacher-provided lesson into one teacher-reviewed, accessibility-first lesson Site.",
+  "author": {
+    "name": "H\u1ed3 L\u00ea Minh Th\u1ea1ch",
+    "email": "67449167+MichaelHo02@users.noreply.github.com",
+    "url": "https://github.com/MichaelHo02"
+  },
+  "homepage": "https://github.com/MichaelHo02/accessible-learning-sites",
+  "repository": "https://github.com/MichaelHo02/accessible-learning-sites",
+  "keywords": [
+    "accessibility",
+    "education",
+    "teachers",
+    "sites"
+  ],
+  "skills": "./skills/",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "Accessible Learning Sites",
+    "shortDescription": "Build accessible lesson Sites for the whole class.",
+    "longDescription": "Includes two teacher workflows. Create Accessible Learning Site turns one local lesson source into a source-faithful, accessibility-first Site with equivalent learning pathways. Schedule Accessible Lesson Intake optionally watches a chosen workspace folder daily or weekly and drafts a Site when new lesson materials arrive.",
+    "developerName": "H\u1ed3 L\u00ea Minh Th\u1ea1ch",
+    "category": "Education",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/MichaelHo02/accessible-learning-sites",
+    "defaultPrompt": [
+      "Turn today's lesson materials into an accessible lesson Site.",
+      "Create an accessible math lesson Site for my class.",
+      "Build a lesson Site from a local PDF, Word, PowerPoint, or spreadsheet file."
+    ],
+    "brandColor": "#1473E6",
+    "logo": "./assets/icon.png",
+    "screenshots": [
+      "./assets/lesson-overview.png",
+      "./assets/constant-acceleration-explorer.png",
+      "./assets/projectile-motion.png"
+    ]
+  }
+}

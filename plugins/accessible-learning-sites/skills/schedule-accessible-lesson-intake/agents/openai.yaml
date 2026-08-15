@@ -1,0 +1,4 @@
+interface:
+  display_name: "Schedule Accessible Lesson Intake"
+  short_description: "Watch a folder and draft new lesson Sites"
+  default_prompt: "Use $schedule-accessible-lesson-intake to watch my lesson folder weekly and create owner-only draft Sites from new materials."

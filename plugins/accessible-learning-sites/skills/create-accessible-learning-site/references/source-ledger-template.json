@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 7,
+  "sourceRevision": "replace-after-final-project-boundary-check",
+  "lesson": {
+    "title": "replace-with-lesson-title",
+    "level": "replace-with-education-level",
+    "objective": "replace-with-one-learning-objective",
+    "materialStyle": {
+      "evidence": "replace-with-observed-pages-slides-or-sections-or-no-observable-style",
+      "palette": [],
+      "typography": "replace-with-observed-typographic-character",
+      "hierarchy": "replace-with-observed-heading-and-emphasis-patterns",
+      "density": "replace-with-observed-spacing-and-content-density",
+      "composition": "replace-with-source-grounded-responsive-composition-plan",
+      "representativeViews": [
+        {
+          "locator": "replace-with-page-slide-or-section",
+          "role": "replace-with-opening-recurring-content-divider-or-exception",
+          "observations": "replace-with-visible-layout-hierarchy-density-and-motifs"
+        }
+      ],
+      "surfaceMapping": {
+        "firstViewport": "replace-with-source-pattern-and-accessible-responsive-adaptation",
+        "settings": "replace-with-source-pattern-and-accessible-responsive-adaptation",
+        "navigation": "replace-with-source-pattern-and-accessible-responsive-adaptation",
+        "sectionFrames": "replace-with-source-pattern-and-accessible-responsive-adaptation",
+        "contentBlocks": "replace-with-source-pattern-and-accessible-responsive-adaptation",
+        "interactions": "replace-with-source-pattern-and-accessible-responsive-adaptation"
+      },
+      "motifs": [],
+      "imagery": "replace-with-observed-image-treatment",
+      "instructionalVisuals": "replace-with-preserve-rebuild-generate-or-no-visual-decisions-and-reasons",
+      "adaptations": "replace-with-accessibility-driven-style-changes"
+    },
+    "academicInvariants": {
+      "terminology": [],
+      "reasoning": [],
+      "difficulty": "replace-with-required-difficulty",
+      "expectedResponse": "replace-with-expected-response",
+      "successCriteria": [],
+      "feedback": "replace-with-feedback-contract"
+    }
+  },
+  "sources": [
+    {
+      "id": "replace-with-stable-source-id",
+      "siteAnchor": "replace-with-literal-lesson-anchor-or-null-when-omitted",
+      "locator": "replace-with-page-slide-section-or-timestamp",
+      "assetPath": null,
+      "assetRole": null,
+      "lessonPurpose": null,
+      "generationPrompt": null,
+      "accessibilityAlternative": null,
+      "assetFallback": null,
+      "mediaEvidence": null,
+      "classification": "replace-with-classification",
+      "disposition": "replace-with-disposition",
+      "reason": "replace-with-reason",
+      "publicationRights": {
+        "status": "replace-with-approved-not_approved-or-uncertain",
+        "evidence": "replace-with-actual-teacher-confirmation"
+      },
+      "answerKeyBoundary": {
+        "status": "replace-with-clear-contains_answer_key-or-uncertain",
+        "evidence": "replace-with-reviewed-boundary"
+      },
+      "uncertainty": null
+    }
+  ],
+  "adaptations": [
+    {
+      "id": "replace-with-stable-adaptation-id",
+      "siteAnchor": "replace-with-literal-lesson-anchor",
+      "sourceLocator": "replace-with-source-locator",
+      "lessonStep": "replace-with-lesson-step",
+      "barrier": "replace-with-content-or-action-barrier",
+      "originalDependency": "replace-with-sense-action-format-or-demand",
+      "dependencyEssential": null,
+      "addedPathway": "replace-with-equivalent-pathway-or-null",
+      "equivalenceReason": "replace-with-invariant-comparison",
+      "essentialLimitation": null,
+      "availableSupport": null,
+      "generatedContent": "replace-with-generated-content-or-null",
+      "uncertainty": null
+    }
+  ]
+}

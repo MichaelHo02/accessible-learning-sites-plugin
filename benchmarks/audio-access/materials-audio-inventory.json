@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "materialsRoot": "materials",
+  "generatedBy": "inventory-audio-materials.mjs",
+  "claims": {
+    "audioDecoded": false,
+    "transcriptAccuracyReviewed": false,
+    "teacherReviewCompleted": false,
+    "auslanGenerated": false,
+    "auslanHumanReviewed": false
+  },
+  "summary": {
+    "recordingCount": 30,
+    "totalBytes": 377150108,
+    "recordingsWithObservedDuration": 30,
+    "transcriptsGenerated": 0
+  },
+  "recordings": [
+    {
+      "path": "Engineering Computing 1/Recording W1 - Lecture - Introduction.m4a",
+      "bytes": 14808290,
+      "durationSeconds": 3665.456,
+      "sha256": "sha256:9d1148824c197fcabf394a22cb407e8da82147ba918b517a96737541c2c7b826",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W10 - Lecture - More Data Types Operators.m4a",
+      "bytes": 14508485,
+      "durationSeconds": 3592.731,
+      "sha256": "sha256:8f7e89e0d2030463dbc754e4e4f5d4579f98897e0aebca12803535c3eb4e3afa",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W11 - Lecture+-+File+IO.m4a",
+      "bytes": 14176319,
+      "durationSeconds": 3507.839,
+      "sha256": "sha256:a6187918fb894f9506b53a0314079eede6dc6a86a40e801f15eefb8a571ba80e",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W2 - Lecture - Basic Concepts.m4a",
+      "bytes": 20808917,
+      "durationSeconds": 5157.291,
+      "sha256": "sha256:0bda4e8ab7143dd97bbd4365383372d31fb99526cafe4cdf8139e302d1132c9e",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W3 - Lecture - Control Statements.m4a",
+      "bytes": 10262441,
+      "durationSeconds": 2538.545,
+      "sha256": "sha256:68f3e19f623a2033363d1405abc0ce95a0b7ccb1ed92deeadeecc2b0f38bcf80",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W4 - Lecture - Arrays.m4a",
+      "bytes": 14448419,
+      "durationSeconds": 3574.712,
+      "sha256": "sha256:1c6496ec0c075135c1cc2293c3b495b3bd884631f59a0598079b4eef756fb834",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W5 - Lecture - Strings.m4a",
+      "bytes": 5948764,
+      "durationSeconds": 1466.201,
+      "sha256": "sha256:08601eb40d455803a3970a674ff1c3e586453f58f6abaaadb4d7a7af530ce42e",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W7 - Lecture - Functions.m4a",
+      "bytes": 18314419,
+      "durationSeconds": 4530.956,
+      "sha256": "sha256:979ac7c2a65d14d5f9634b8f48eaee69153ef3edd8f3b8c9ca001287b20d3544",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W8 - Lecture - More Functions.m4a",
+      "bytes": 13440470,
+      "durationSeconds": 3328.209,
+      "sha256": "sha256:2a770508c38c259f340acf97dee627cb350354452f0ecc11bc33b43f1817b970",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Computing 1/Recording W9 - Lecture - Program Design.m4a",
+      "bytes": 18549639,
+      "durationSeconds": 4589.47,
+      "sha256": "sha256:aba3d520886e0222236e26243c79e4780c76fe0add3c701b9788bb57d1976e61",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W1 - Lecture - Course Introduction + Motions/Recordings/Recording 1.m4a",
+      "bytes": 21376522,
+      "durationSeconds": 5299.165,
+      "sha256": "sha256:c1eed4ad894f4aabf6518b8ca9e9f1a1538787df74449b9529bf219e07262384",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W10 - Lecture - Electromagnetic Induction/Recordings/Recording 1.m4a",
+      "bytes": 306093,
+      "durationSeconds": 69.753,
+      "sha256": "sha256:6b3031b6a9afc0c5e668e9617df7e5c23d2ea40e1e407dd5179dc6b88cbef1d9",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W10 - Lecture - Electromagnetic Induction/Recordings/Recording 2.m4a",
+      "bytes": 402747,
+      "durationSeconds": 93.855,
+      "sha256": "sha256:2b52edaa3edba0ad49bedc08d8d5639d56cb83dc42cd8681ec78c9abf584d3f0",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W10 - Lecture - Electromagnetic Induction/Recordings/Recording 3.m4a",
+      "bytes": 15711104,
+      "durationSeconds": 3892.686,
+      "sha256": "sha256:d7b5dca1476ff21cc158cb222c2f751b7dbfb51562762cb236e6eb048dbc385b",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W11 - Lecture - Oscillations Waves/Recordings/Recording 1.m4a",
+      "bytes": 20735672,
+      "durationSeconds": 5139.412,
+      "sha256": "sha256:307cddbed422ae8e9b553a7248783d72441d6e0d6b7c76b6e4ac9abe9a8a316c",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W2 - Lecture - Kinematics/Recordings/Recording 1.m4a",
+      "bytes": 21678861,
+      "durationSeconds": 5373.701,
+      "sha256": "sha256:ec8c9a78bfbf31010192f4cb74e3dae17df7e1e39856176bf4b27d901ee89b1b",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W3 - Lecture - Newton laws of motion/Recordings/Recording 1.m4a",
+      "bytes": 21158299,
+      "durationSeconds": 5241.162,
+      "sha256": "sha256:2463d9dca1970246bb46e8e29699d868def038cb6368f684968fb77bb4addbda",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W4 - Lecture - Rotational motion/Recordings/Recording 1.m4a",
+      "bytes": 664374,
+      "durationSeconds": 160.729,
+      "sha256": "sha256:b39710610448e7e6cd05807a0abc93ef13c2e7ff8983a3dc4ccd3e756d14cea7",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W4 - Lecture - Rotational motion/Recordings/Recording 2.m4a",
+      "bytes": 20272923,
+      "durationSeconds": 7197.861,
+      "sha256": "sha256:7c656c03260508e14ffc8914c048dacebd0f1e3d1625eeb06a4f90175a57e654",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W4 - Lecture - Rotational motion/Recordings/Recording 3.m4a",
+      "bytes": 53907,
+      "durationSeconds": 5.294,
+      "sha256": "sha256:ed90116370750b0c3036a08116d67ff0bc4c8366afc58c98545b46b3b318c2bc",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W5 - Lecture - Rotational motion/Recordings/Recording 1.m4a",
+      "bytes": 19876617,
+      "durationSeconds": 4926.996,
+      "sha256": "sha256:323d2dca64e8208e0e2e3cbba3b0717ade87b0e558beca3dfec72cbaacfdf68e",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W5 - Lecture - Rotational motion/Recordings/Recording 2.m4a",
+      "bytes": 2166447,
+      "durationSeconds": 528.672,
+      "sha256": "sha256:70b41edba2601f293dd7c014f9b8ae9da147e64cacfb5c3f2b56cdf045a2a9fe",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W6 - Lecture - Work Energy/Recordings/Recording 1.m4a",
+      "bytes": 20494631,
+      "durationSeconds": 5078.854,
+      "sha256": "sha256:3c90b940442b2acc20291e0f552ac1e00b5394013c21c104da7845758ab41d80",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W7 - Lecture - Momentum and Impulse/Recordings/Recording 1.m4a",
+      "bytes": 152157,
+      "durationSeconds": 30.418,
+      "sha256": "sha256:4fc458622ffff535ab035eee367a90caa2cf3f44bc72bd49e47aa7e786962179",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W7 - Lecture - Momentum and Impulse/Recordings/Recording 2.m4a",
+      "bytes": 18869292,
+      "durationSeconds": 4676.778,
+      "sha256": "sha256:173c3dcf7f5f73bd2fcec7dfc1f0bf3c4aa6ac7ae1549dc28c515eaade977b42",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W8 - Lecture - Electric charge Electric fields/Recordings/Recording 1.m4a",
+      "bytes": 20405090,
+      "durationSeconds": 5058.235,
+      "sha256": "sha256:a556dbdc577495d378d394b7f5a27d9c722ec052a71a4b3db2ac6dc2696075ca",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W9 - Lecture - Current Resistance and Magnetic Field (2)/Recordings/Recording 1.m4a",
+      "bytes": 20402022,
+      "durationSeconds": 5053.312,
+      "sha256": "sha256:68693563e7e2e92c61b77dd5f90174cbe787372ad19efc73bd3460679ba3c2c6",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W9 - Lecture - Current Resistance and Magnetic Field (2)/Recordings/Recording 2.m4a",
+      "bytes": 5163291,
+      "durationSeconds": 1271.803,
+      "sha256": "sha256:7c23677a4cd2e84cc8bf5bad3931c30abd91e930b2b53d72b884e2327f5f8fd0",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W9 - Lecture - Current Resistance and Magnetic Field (2)/Recordings/Recording 3.m4a",
+      "bytes": 1887427,
+      "durationSeconds": 460.452,
+      "sha256": "sha256:27c59caf5e7b54679ab29dacda4abc6bd6da25e8199afcc87f721ae42bc5dc19",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    },
+    {
+      "path": "Engineering Science/W9 - Lecture - Current Resistance and Magnetic Field/Recording 1.m4a",
+      "bytes": 106469,
+      "durationSeconds": 18.855,
+      "sha256": "sha256:d9a2399fc34acc8b2b767fd48c68981d9e143c37bbb5f9e4c132350dd753733e",
+      "transcriptStatus": "not_run",
+      "transcriptEvidence": "No authorized or observed transcription was run for this inventory.",
+      "teacherReviewStatus": "pending",
+      "publicationRightsStatus": "uncertain"
+    }
+  ]
+}

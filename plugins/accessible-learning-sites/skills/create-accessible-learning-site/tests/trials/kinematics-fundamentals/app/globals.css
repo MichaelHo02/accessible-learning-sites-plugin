@@ -1,0 +1,799 @@
+:root {
+  --background: #ececef;
+  --foreground: #11123c;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Two classes ensure the lesson palette wins even when the shared kit loads later. */
+.als-shell.als-shell {
+  --als-background: #ececef;
+  --als-surface: #ffffff;
+  --als-text: #11123c;
+  --als-muted: #3f425c;
+  --als-accent: #00005b;
+  --als-on-accent: #ffffff;
+  --als-accent-soft: #ededfa;
+  --als-border: #555873;
+  --als-category-one: #fff200;
+  --als-category-two: #e60028;
+  --als-category-three: #ffffff;
+  --als-control-border-width: 2px;
+  --lesson-heading: #00005b;
+  --lesson-on-heading: #ffffff;
+  --lesson-emphasis: #e60028;
+  --lesson-highlight: #fff200;
+  --lesson-decoration: #00b7b5;
+  --studio-canvas-background: var(--lesson-heading);
+  --studio-canvas-surface: #686ba0;
+  --studio-canvas-text: #ffffff;
+  --studio-canvas-muted: #d4d6e3;
+  --studio-canvas-guide: #aeb1c4;
+  --studio-category-one: var(--als-category-one);
+  --studio-category-two: #ff1744;
+  --studio-category-three: var(--als-category-three);
+  --als-title-size: clamp(2.25rem, 7vw, 4.75rem);
+}
+
+.als-shell.als-shell[data-colour-support="stronger"] {
+  --als-background: #ffffff;
+  --als-surface: #ffffff;
+  --als-text: #111111;
+  --als-muted: #2f2f2f;
+  --als-accent: #003b5c;
+  --als-on-accent: #ffffff;
+  --als-accent-soft: #dceff7;
+  --als-border: #111111;
+  --als-category-one: #003b5c;
+  --als-category-two: #9a3f00;
+  --als-category-three: #4c1d95;
+  --als-control-border-width: 3px;
+  --lesson-heading: #003b5c;
+  --lesson-on-heading: #ffffff;
+  --lesson-emphasis: #9a3f00;
+  --lesson-highlight: #ffffff;
+  --lesson-decoration: #006b6b;
+  --studio-canvas-background: #000000;
+  --studio-canvas-surface: #333333;
+  --studio-canvas-text: #ffffff;
+  --studio-canvas-muted: #e5e7eb;
+  --studio-canvas-guide: #ffffff;
+  --studio-category-one: #8bdcff;
+  --studio-category-two: #ffad66;
+  --studio-category-three: #d8b4fe;
+}
+
+.als-shell.als-shell[data-colour-support="red-green"] {
+  --als-background: #eef5f8;
+  --als-surface: #ffffff;
+  --als-text: #101820;
+  --als-muted: #334155;
+  --als-accent: #005a8d;
+  --als-on-accent: #ffffff;
+  --als-accent-soft: #dbeef6;
+  --als-border: #244a5a;
+  --als-category-one: #005a8d;
+  --als-category-two: #8a4f00;
+  --als-category-three: #6f3c8f;
+  --lesson-heading: #003f5c;
+  --lesson-on-heading: #ffffff;
+  --lesson-emphasis: #8a4f00;
+  --lesson-highlight: #ffffff;
+  --lesson-decoration: #6f3c8f;
+  --studio-canvas-background: #001f33;
+  --studio-canvas-surface: #264e63;
+  --studio-canvas-text: #ffffff;
+  --studio-canvas-muted: #dbeef6;
+  --studio-canvas-guide: #ffffff;
+  --studio-category-one: #56b4e9;
+  --studio-category-two: #e69f00;
+  --studio-category-three: #cc79a7;
+}
+
+.als-shell.als-shell[data-colour-support="blue-yellow"] {
+  --als-background: #f5f2f2;
+  --als-surface: #ffffff;
+  --als-text: #171717;
+  --als-muted: #3f3f46;
+  --als-accent: #7a1f3d;
+  --als-on-accent: #ffffff;
+  --als-accent-soft: #f2e3e8;
+  --als-border: #4a3a40;
+  --als-category-one: #9f1d35;
+  --als-category-two: #146c43;
+  --als-category-three: #7a2f78;
+  --lesson-heading: #5a1830;
+  --lesson-on-heading: #ffffff;
+  --lesson-emphasis: #146c43;
+  --lesson-highlight: #ffffff;
+  --lesson-decoration: #7a2f78;
+  --studio-canvas-background: #2a0b17;
+  --studio-canvas-surface: #5a3440;
+  --studio-canvas-text: #ffffff;
+  --studio-canvas-muted: #f2e3e8;
+  --studio-canvas-guide: #ffffff;
+  --studio-category-one: #ff6b6b;
+  --studio-category-two: #4ade80;
+  --studio-category-three: #f0abfc;
+}
+
+.als-shell.als-shell[data-colour-support="minimal"] {
+  --als-background: #f1f1ec;
+  --als-surface: #f8f8f4;
+  --als-text: #111111;
+  --als-muted: #333333;
+  --als-accent: #1f2937;
+  --als-on-accent: #ffffff;
+  --als-accent-soft: #e7e7e1;
+  --als-border: #374151;
+  --als-category-one: #111111;
+  --als-category-two: #6b7280;
+  --als-category-three: #4b5563;
+  --lesson-heading: #f8f8f4;
+  --lesson-on-heading: #111111;
+  --lesson-emphasis: #6b7280;
+  --lesson-highlight: #111111;
+  --lesson-decoration: #4b5563;
+  --studio-canvas-background: #f8f8f4;
+  --studio-canvas-surface: #e1e1dc;
+  --studio-canvas-text: #111111;
+  --studio-canvas-muted: #333333;
+  --studio-canvas-guide: #4b5563;
+  --studio-category-one: #111111;
+  --studio-category-two: #6b7280;
+  --studio-category-three: #4b5563;
+}
+
+.als-shell .als-header {
+  position: relative;
+  overflow: hidden;
+  color: var(--lesson-on-heading);
+  background: var(--lesson-heading);
+  border-bottom: 0.65rem solid var(--lesson-emphasis);
+}
+
+.als-shell .als-header::before {
+  position: absolute;
+  top: 38%;
+  left: -3.5rem;
+  width: 7rem;
+  height: 7rem;
+  background: var(--lesson-decoration);
+  border-radius: 50%;
+  content: "";
+}
+
+.als-shell .als-header::after,
+.als-shell .als-reading > section > h2::after,
+.als-shell .ali-point-heading-level-2 > .ali-point-heading-row::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: var(--lesson-emphasis);
+  clip-path: polygon(42% 0, 100% 0, 100% 100%, 72% 100%, 72% 68%, 42% 68%);
+  content: "";
+}
+
+.als-shell .als-header-inner {
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(2.25rem, 6vw, 4.5rem);
+}
+
+.als-shell .als-context {
+  color: var(--lesson-highlight);
+  letter-spacing: 0.02em;
+}
+
+.als-shell .als-header h1 {
+  max-width: 16ch;
+  font-weight: 650;
+}
+
+.als-shell .als-objective {
+  color: #11123c;
+  background: #f4f4f4;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  box-shadow: 0 0 0 1px #555873;
+}
+
+.als-shell .als-layout {
+  width: min(78rem, calc(100% - 2rem));
+}
+
+.als-shell .als-settings {
+  border-radius: 0.15rem;
+}
+
+.als-shell .als-settings > h2 {
+  color: var(--lesson-on-heading);
+  background: var(--lesson-heading);
+  border-bottom: 0.3rem solid var(--lesson-emphasis);
+}
+
+.als-shell .als-section-nav ol {
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+}
+
+.als-shell .als-reading > section,
+.als-shell .als-reading > section + section {
+  position: relative;
+  margin-block: 0 1.75rem;
+  padding: 0 1rem 1.25rem;
+  overflow: clip;
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+  border-radius: 0.15rem;
+  box-shadow: 0 0.2rem 0 #c7c8d1;
+}
+
+.als-shell .als-reading > section > .ali-point-heading-level-2 {
+  margin: 0 -1rem 1rem;
+  max-width: none;
+}
+
+.als-shell .als-reading > section > h2 {
+  position: relative;
+  margin: 0 -1rem 1rem;
+  padding: 0.7rem 5rem 0.7rem 1rem;
+  color: var(--lesson-highlight);
+  background: var(--lesson-heading);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.als-shell .ali-point-heading-level-2 > .ali-point-heading-row {
+  position: relative;
+  padding: 0.7rem 5rem 0.7rem 1rem;
+  background: var(--lesson-heading);
+}
+
+.als-shell .ali-point-heading-level-2 > .ali-point-heading-row > h2 {
+  color: var(--lesson-highlight);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.als-shell .ali-point-heading-level-2 .ali-point-heading-toggle {
+  position: relative;
+  z-index: 1;
+  color: var(--als-on-accent);
+  background: var(--als-accent);
+  border-color: var(--als-on-accent);
+}
+
+.als-shell .lesson-audio-bar {
+  display: grid;
+  grid-template-columns: minmax(12rem, auto) minmax(14rem, 1fr);
+  align-items: center;
+  gap: 0.65rem 1rem;
+  margin-block: 0 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+}
+
+.als-shell .lesson-audio-bar p {
+  margin: 0;
+}
+
+.als-shell .lesson-audio-bar audio {
+  width: 100%;
+  min-width: 0;
+}
+
+.als-shell .lesson-audio-help {
+  grid-column: 1 / -1;
+  color: var(--als-muted);
+  font-size: 0.875em;
+}
+
+.als-shell .lesson-problem-reference {
+  margin: 0 0 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+}
+
+.als-shell .lesson-problem-reference h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25em;
+}
+
+.als-shell .lesson-plain-explanation summary {
+  min-height: 2.75rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.als-shell .lesson-problem-reference p {
+  margin-block-end: 0.5rem;
+}
+
+.als-shell .lesson-cognitive-support {
+  display: grid;
+  gap: 0.75rem;
+  margin-block: 1rem 1.5rem;
+}
+
+.als-shell .lesson-language-review-note {
+  margin-block: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--als-accent-soft);
+  border-inline-start: 0.3rem solid var(--lesson-emphasis);
+  color: var(--als-muted);
+}
+
+.als-shell .lesson-key-points,
+.als-shell .lesson-plain-explanation {
+  padding: 0.75rem 1rem;
+  background: var(--als-accent-soft);
+  border-inline-start: 0.3rem solid var(--lesson-emphasis);
+}
+
+.als-shell .lesson-key-points h3 {
+  margin-top: 0;
+}
+
+.als-shell .lesson-key-points ul,
+.als-shell .lesson-plain-explanation p {
+  margin-block-end: 0;
+}
+
+.als-shell .lesson-topic-nav {
+  margin-block: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--als-accent-soft);
+  border-inline-start: 0.3rem solid var(--lesson-emphasis);
+}
+
+.als-shell .lesson-topic-nav h3 {
+  margin-block-start: 0;
+}
+
+.als-shell .lesson-topic-nav ol {
+  display: grid;
+  gap: 0.4rem;
+  margin-block-end: 0;
+}
+
+.als-shell .lesson-topic-block {
+  padding-block-start: 1.25rem;
+  border-block-start: 1px solid var(--als-border);
+}
+
+.als-shell .lesson-topic-block + .lesson-topic-block {
+  margin-block-start: 1.75rem;
+}
+
+.als-shell .lesson-topic-block > :is(h3, .ali-point-heading):first-child {
+  margin-block-start: 0;
+}
+
+.als-shell .lesson-context-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.als-shell:is(
+    [data-colour-support="stronger"],
+    [data-colour-support="red-green"],
+    [data-colour-support="blue-yellow"]
+  )
+  .lesson-context-image {
+  filter: grayscale(1) contrast(1.08);
+}
+
+.als-shell[data-colour-support="minimal"] .lesson-context-illustration {
+  display: none;
+}
+
+.als-shell .als-reading h3 {
+  color: var(--als-accent);
+}
+
+.als-shell .ali-vocabulary > div {
+  border-inline-start-color: var(--lesson-emphasis);
+  border-radius: 0;
+}
+
+.als-shell :where(
+  .ali-representation,
+  .ali-steps details,
+  .ali-choice,
+  .ali-typed,
+  .ali-relationship-explorer
+) {
+  border-radius: 0.15rem;
+}
+
+.motion-explorer {
+  margin: 1.25rem 0;
+}
+
+.concept-studio {
+  max-width: 100%;
+  margin: 1.5rem 0 2rem;
+}
+
+.concept-studio-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 26rem;
+  overflow: clip;
+  color: var(--als-text);
+  background: var(--als-background);
+  border: 2px solid var(--lesson-heading);
+  border-radius: 0.15rem;
+  box-shadow: 0 0.35rem 0 var(--lesson-emphasis);
+}
+
+.concept-studio-controls,
+.concept-studio-visual {
+  min-width: 0;
+  padding: clamp(1.25rem, 3.2vw, 2.75rem);
+}
+
+.concept-studio-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--als-background);
+}
+
+.concept-studio-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--lesson-on-heading);
+  background: var(--lesson-heading);
+  border-inline-start: 0.4rem solid var(--lesson-emphasis);
+}
+
+.concept-studio-visual::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--lesson-emphasis);
+  clip-path: polygon(42% 0, 100% 0, 100% 100%, 72% 100%, 72% 68%, 42% 68%);
+  content: "";
+}
+
+.als-shell.als-shell[data-colour-support="minimal"] .als-header::before,
+.als-shell.als-shell[data-colour-support="minimal"] .als-header::after,
+.als-shell.als-shell[data-colour-support="minimal"] .als-reading > section > h2::after,
+.als-shell.als-shell[data-colour-support="minimal"]
+  .ali-point-heading-level-2
+  > .ali-point-heading-row::after,
+.als-shell.als-shell[data-colour-support="minimal"] .concept-studio-visual::after {
+  display: none;
+}
+
+.concept-studio-visual > * {
+  position: relative;
+  z-index: 1;
+}
+
+.concept-studio-visual h4 {
+  margin: 0;
+  padding-inline: 2.5rem;
+  color: var(--lesson-highlight);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  text-align: center;
+}
+
+.concept-studio-visual > p {
+  min-height: 1.5em;
+  margin: 0.35rem 0 0.65rem;
+  color: var(--lesson-on-heading);
+  text-align: center;
+}
+
+.studio-formula {
+  display: grid;
+  min-height: 8rem;
+  place-items: center;
+  overflow-x: auto;
+  color: var(--als-text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+}
+
+.studio-formula math {
+  max-width: 100%;
+}
+
+.studio-variables {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.studio-object-choice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--als-border);
+}
+
+.studio-object-choice legend {
+  padding-inline: 0.35rem;
+  font-weight: 700;
+}
+
+.studio-object-choice label {
+  display: inline-flex;
+  min-height: 2.75rem;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.studio-object-choice input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  accent-color: var(--als-accent);
+}
+
+.studio-variable {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.studio-variable-meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.studio-variable-meta label {
+  display: flex;
+  min-width: 0;
+  gap: 0.65rem;
+  align-items: baseline;
+}
+
+.studio-variable-meta var {
+  min-width: 1.5rem;
+  color: var(--als-accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.studio-variable-meta label span {
+  overflow: hidden;
+  color: var(--als-muted);
+  font-size: 0.85rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.studio-number-wrap {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  color: var(--als-muted);
+  font-size: 0.8rem;
+}
+
+.studio-number-wrap input {
+  width: 5rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.45rem;
+  color: var(--als-text);
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+  border-radius: 0.15rem;
+  font: inherit;
+}
+
+.studio-variable input[type="range"] {
+  width: 100%;
+  min-height: 2rem;
+  margin: 0;
+  accent-color: var(--als-accent);
+}
+
+.studio-result {
+  min-height: 3.2rem;
+  padding: 0.75rem;
+  color: var(--als-text);
+  background: var(--als-surface);
+  border-inline-start: 0.3rem solid var(--lesson-emphasis);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+}
+
+.studio-result p {
+  margin: 0;
+}
+
+.studio-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.studio-reset {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.9rem;
+  color: var(--als-on-accent);
+  background: var(--als-accent);
+  border: 1px solid var(--als-accent);
+  border-block-end: 0.3rem solid var(--lesson-emphasis);
+  border-radius: 0.15rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.studio-reset:hover:not(:disabled) {
+  color: var(--als-text);
+  background: var(--als-accent-soft);
+  border-color: var(--als-accent);
+}
+
+.studio-reset:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.studio-canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  color: var(--studio-canvas-text);
+  background: var(--studio-canvas-background);
+}
+
+.concept-studio-equivalent {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.85rem 0 0;
+  padding: 1rem;
+  color: var(--als-text);
+  background: var(--als-surface);
+  border: 1px solid var(--als-border);
+  border-radius: 0.15rem;
+}
+
+.concept-studio-equivalent p {
+  margin: 0;
+}
+
+.concept-studio-equivalent table {
+  width: 100%;
+}
+
+.source-steps {
+  display: grid;
+  gap: 0.75rem;
+  padding-inline-start: 1.5rem;
+}
+
+.source-steps li {
+  padding: 0.75rem 0.9rem;
+  background: var(--als-background);
+  border-inline-start: 0.3rem solid var(--lesson-emphasis);
+}
+
+@media (max-width: 36rem) {
+  .als-shell .als-header::before {
+    display: none;
+  }
+
+  .als-shell .als-header::after,
+  .als-shell .als-reading > section > h2::after,
+  .als-shell .ali-point-heading-level-2 > .ali-point-heading-row::after {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
+
+@media (max-width: 58rem) {
+  .als-shell .lesson-audio-bar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .concept-studio-frame {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .concept-studio-visual {
+    border-block-start: 0.4rem solid var(--lesson-emphasis);
+    border-inline-start: 0;
+  }
+}
+
+@media (max-width: 28rem) {
+  .concept-studio-frame {
+    border-radius: 0.15rem;
+  }
+
+  .concept-studio-controls,
+  .concept-studio-visual {
+    padding: 1rem;
+  }
+
+  .studio-variable-meta {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2rem;
+  }
+
+  .studio-number-wrap {
+    justify-content: flex-end;
+  }
+}
+
+@media (forced-colors: active) {
+  .als-shell.als-shell {
+    --studio-canvas-background: Canvas;
+    --studio-canvas-surface: Canvas;
+    --studio-canvas-text: CanvasText;
+    --studio-canvas-muted: CanvasText;
+    --studio-canvas-guide: CanvasText;
+    --studio-category-one: CanvasText;
+    --studio-category-two: CanvasText;
+    --studio-category-three: CanvasText;
+  }
+
+  .concept-studio-frame,
+  .concept-studio-controls,
+  .concept-studio-visual,
+  .studio-number-wrap input,
+  .studio-reset {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+
+  .concept-studio-visual h4,
+  .concept-studio-visual > p,
+  .studio-formula,
+  .studio-variable-meta var,
+  .studio-variable-meta label span,
+  .studio-number-wrap,
+  .studio-result {
+    color: CanvasText;
+  }
+
+  .concept-studio-visual::after {
+    display: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .als-shell .als-header,
+  .als-shell .als-reading > section,
+  .als-shell .als-reading > section > h2,
+  .als-shell .ali-point-heading-level-2 > .ali-point-heading-row,
+  .als-shell .als-settings > h2 {
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+    box-shadow: none;
+  }
+
+  .als-shell .als-header::before,
+  .als-shell .als-header::after,
+  .als-shell .als-reading > section > h2::after,
+  .als-shell .ali-point-heading-level-2 > .ali-point-heading-row::after {
+    display: none;
+  }
+}

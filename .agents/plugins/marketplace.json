@@ -1,0 +1,20 @@
+{
+  "name": "accessible-learning-sites",
+  "interface": {
+    "displayName": "Accessible Learning Sites"
+  },
+  "plugins": [
+    {
+      "name": "accessible-learning-sites",
+      "source": {
+        "source": "local",
+        "path": "./plugins/accessible-learning-sites"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    }
+  ]
+}

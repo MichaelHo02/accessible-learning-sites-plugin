@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "observedOn": "2026-07-20",
+  "intendedAccess": "owner_only",
+  "selectedPilot": "Engineering Science Week 3 — Newton laws of motion",
+  "checks": {
+    "materials_audio_inventory": {
+      "status": "passed",
+      "evidence": "command: node plugins/accessible-learning-sites/skills/create-accessible-learning-site/scripts/inventory-audio-materials.mjs materials benchmarks/audio-access/materials-audio-inventory.json; exit_code: 0; observed 30 recordings, 377150108 bytes, and 30 durations. This does not decode speech."
+    },
+    "plugin_assets": {
+      "status": "passed",
+      "evidence": "command: node --test plugins/accessible-learning-sites/skills/create-accessible-learning-site/tests/plugin-assets.test.mjs; exit_code: 0; 41 tests passed, including the university-newtons-audio fixture and rendered audio structure rules."
+    },
+    "fixture_production_build": {
+      "status": "passed",
+      "evidence": "command: npm --prefix /tmp/als-audio-build.JHf8SY run build; exit_code: 0; a temporary Sites starter containing the current five-file kit and university-newtons-audio fixture completed all five vinext build stages."
+    },
+    "fixture_rendered_document": {
+      "status": "passed",
+      "evidence": "command: node plugins/accessible-learning-sites/skills/create-accessible-learning-site/scripts/check-rendered-site.mjs http://127.0.0.1:4387/; exit_code: 0; result: passed; findings: 0."
+    },
+    "development_forward_test": {
+      "status": "passed",
+      "evidence": "A separate read-only agent forward-tested the revised workflow against an Australian university audio-and-slides scenario. After two P1 fixes, it found no remaining P1 issue in transcript stop states, Auslan labels, audio descriptions, or uncertain-rights deployment handling. This is plugin-development review, not publication specialist or human accessibility evidence."
+    },
+    "native_audio_structure": {
+      "status": "passed",
+      "evidence": "Source and deterministic rendered checks observed native controls, no autoplay, a visible transcript reference, timestamp controls, and no networking or persisted response in the structural fixture."
+    },
+    "real_recording_transcription": {
+      "status": "not_run",
+      "evidence": "No API key, teacher-provided transcript, or explicit authorization to send the selected recording to an external transcription service was available."
+    },
+    "transcript_accuracy_and_slide_crosswalk": {
+      "status": "not_run",
+      "evidence": "The selected real recording has no observed transcript, so speaker, term, timestamp, meaningful-sound, and slide-reference comparison could not run."
+    },
+    "browser_and_assistive_technology": {
+      "status": "not_run",
+      "evidence": "No observed browser, keyboard, focus, screen-reader, voice-input, or switch-input session was recorded for this branch benchmark."
+    },
+    "teacher_review": {
+      "status": "not_run",
+      "evidence": "No teacher reviewed source coverage, rights, factual accuracy, academic invariants, transcript accuracy, or the owner-only fixture in this run."
+    },
+    "auslan_generation": {
+      "status": "not_run",
+      "evidence": "No observed Auslan generation capability was used; general image or video generation was not treated as sign-language generation."
+    },
+    "auslan_human_review": {
+      "status": "not_run",
+      "evidence": "No fluent Deaf Auslan signer or suitably qualified interpreter reviewed a revision-bound interpretation."
+    }
+  },
+  "claim": "Structural improvement demonstrated; real lecture and human validation remain pending."
+}

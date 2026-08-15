@@ -1,0 +1,105 @@
+{
+  "lessonId": "kinematics-fundamentals",
+  "createdAt": "2026-07-21",
+  "purpose": "Teacher-only provenance addendum for generated instructional illustrations added during local iteration.",
+  "generator": "OpenAI built-in image generation",
+  "sources": [
+    {
+      "id": "generated-everyday-motion-context",
+      "path": "public/illustrations/everyday-motion-context.webp",
+      "sha256": "de123c114bcc163258b0453f78f6a5f365defa6bfd3bd7c605c8a272a27923a0",
+      "lessonAnchor": null,
+      "status": "replaced-by-topic-specific-context-images",
+      "purpose": "Orient learners to familiar examples of motion without carrying an equation, answer, or colour-dependent relationship.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "A campus scene places a car on a road beside successive positions of one falling ball and another ball following an arc after a throw. The optional image introduces the lesson topics; the semantic diagrams and explanations contain the instructional detail.",
+      "prompt": "Use case: scientific-educational. Asset type: wide contextual hero illustration for an accessible first-year university kinematics lesson. Create one polished, friendly illustration showing three familiar examples of motion in a single coherent wide composition: a compact car moving along a level road, a ball falling vertically, and a separate ball travelling through the air after being thrown. Use a simplified open campus courtyard and adjacent road, clean editorial digital illustration, soft paper-like texture, restrained detail, soft daylight, and a muted colour-blind-considerate palette. The examples must remain recognizable when desaturated. No text, letters, numbers, equations, arrows, graphs, axes, legends, logos, branding, watermarks, UI controls, excessive saturation, photorealism, or decorative confetti."
+    },
+    {
+      "id": "generated-constant-acceleration-context",
+      "path": "public/illustrations/constant-acceleration-context.webp",
+      "sha256": "4a49d21c96124e456cd21cb7f6f1368f5d6a998b19ab9bb846879032e9b25b44",
+      "lessonAnchor": "app/page.tsx#constant-acceleration",
+      "purpose": "Give the constant-acceleration section one familiar real-world object before the adaptive semantic motion diagram and simulator.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "A single compact blue car travels along a level campus road. The optional image provides familiar context; it does not encode the motion calculation.",
+      "promptProvenance": "Reconstructed generation brief because the delayed image-generation completion did not retain its original prompt in the workspace.",
+      "prompt": "Reconstructed brief: create a wide, calm educational illustration of one generic compact car moving along a level campus road, with a recognizable silhouette, restrained detail, soft daylight, no text, arrows, equations, logos, branding, or watermark. The image supplies context only; motion relationships remain in the semantic diagram and simulator."
+    },
+    {
+      "id": "generated-free-fall-context",
+      "path": "public/illustrations/free-fall-context.webp",
+      "sha256": "653b33d3ca627aaaadb38db689a0420a3ecd1520cb61ed7b346c62f44151f135",
+      "lessonAnchor": "app/page.tsx#free-fall",
+      "purpose": "Give the free-fall section a familiar release event before the adaptive semantic motion diagram.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "An open hand has released one round ball above a padded gym mat. The optional image provides context; it does not show the idealized free-fall calculation.",
+      "promptProvenance": "Reconstructed generation brief because the delayed image-generation completion did not retain its original prompt in the workspace.",
+      "prompt": "Reconstructed brief: create a wide educational illustration of an open hand just after releasing one clearly round ball above a padded indoor gym mat, with soft light, restrained detail, no impact, text, arrows, equations, logos, branding, or watermark. The image supplies context only; the semantic diagram explains ideal free fall."
+    },
+    {
+      "id": "generated-projectile-motion-context",
+      "path": "public/illustrations/projectile-motion-context.webp",
+      "sha256": "3aa2d8d1fe0bab9e75c7d130baa93d5241ca96b0ab721287645bdb78ec7337c9",
+      "lessonAnchor": "app/page.tsx#projectile-motion",
+      "purpose": "Give the projectile-motion section a familiar throwing action before the adaptive semantic component diagram and simulator.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "A student follows through after releasing one round ball across a campus field. The optional image provides context; it does not encode the projectile path or component calculation.",
+      "promptProvenance": "Built-in image generation followed by one precise body-pose correction requested during teacher review.",
+      "prompt": "Initial generation: create a wide educational illustration of one university student throwing one clearly round ball across an open campus field, with the ball visible in flight, restrained detail, soft daylight, no trajectory line, text, arrows, equations, logos, branding, or watermark. Corrective edit: change only the student's body pose to a believable follow-through immediately after release, with the throwing arm extended toward the airborne ball, the torso rotated forward, and weight transferred onto the front leg; keep the ball position, identity, clothing, framing, background, lighting, palette, and texture unchanged."
+    },
+    {
+      "id": "generated-constant-acceleration-illustration",
+      "path": "public/illustrations/constant-acceleration.webp",
+      "sha256": "633c5f793b5e3bb14476dea0a199f7cf607138ae131e7a36d439544cdbdb68b0",
+      "lessonAnchor": "app/page.tsx#interactive-explorer-title",
+      "purpose": "Show increasing displacement and velocity over equal time intervals under constant acceleration.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "Five snapshots show the same car at equal time intervals. The gaps between positions and the right-pointing velocity arrows grow from left to right, while the acceleration direction stays constant. The car therefore travels farther during each equal interval.",
+      "prompt": "Use case: scientific-educational. Asset type: responsive lesson section illustration for first-year engineering students. Illustrate constant acceleration using five successive snapshots of the same compact car moving left to right at equal time intervals. Increase the gaps and velocity-arrow lengths progressively; keep one rightward acceleration direction constant. Use a clean flat vector-like scientific style with deep navy, cyan, yellow, restrained red, and a pale background. No text, letters, numerals, equations, labels, logos, watermark, people, perspective distortion, or decorative clutter."
+    },
+    {
+      "id": "generated-constant-acceleration-car-sprite",
+      "path": "public/simulator/car-sprite.png",
+      "sha256": "25809b86367fc954bb91944e0913e15dc68939422fd69937db4db3063164cc34",
+      "lessonAnchor": "app/constant-acceleration-explorer.tsx#motion-explorer-title",
+      "additionalLessonAnchors": [
+        "app/kinematics-visuals.tsx#relative-studio-title"
+      ],
+      "purpose": "Let the learner use either an abstract point or a recognizable car in the constant-acceleration and relative-velocity visualizations without changing any motion calculation.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "The car is an optional visual substitute for a point. In the constant-acceleration visualization, it uses the same calculated position and velocity arrow. In the relative-velocity visualization, it marks an arrow endpoint and explicitly does not represent position. Numerical results, graphs, labels, and data tables remain identical to the point view.",
+      "prompt": "Use case: scientific-educational. Asset type: movable object sprite for a university kinematics simulator. Create one believable generic blue compact hatchback in a horizontal right-facing side profile, fully visible and recognizable at small size. Place it on a perfectly flat solid green chroma-key background for removal. No brand marks, people, motion blur, shadows, reflections, text, watermark, cropping, or background variation."
+    },
+    {
+      "id": "generated-projectile-tennis-ball-sprite",
+      "path": "public/simulator/tennis-ball-sprite.png",
+      "sha256": "c5ccc7b5c05b3ef472eb66c061cca46f038754fd8562f9b27b2739dde3ca503a",
+      "lessonAnchor": "app/kinematics-visuals.tsx#projectile-studio-title",
+      "purpose": "Let the learner display the calculated projectile position as either an abstract point or a recognizable tennis ball without changing the projectile model.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "The tennis ball is an optional visual substitute for the plotted point. Its calculated position and component-velocity arrows are identical to the point view, and the numerical result and data table remain available.",
+      "prompt": "Use case: scientific-educational. Asset type: movable projectile sprite for a university kinematics simulator. Create one realistic but simplified bright optic-yellow tennis ball with a familiar curved white seam, recognizable at small size on a dark navy canvas. Place it on a perfectly flat solid magenta chroma-key background for removal. No logos, letters, people, motion blur, shadows, reflections, text, watermark, cropping, or background variation."
+    },
+    {
+      "id": "generated-free-fall-illustration",
+      "path": "public/illustrations/free-fall.webp",
+      "sha256": "9ee71d8c95579c417c11f187a15aaedb9ae6e2fb0a6d8a9f6216ed9cb80a7bdc",
+      "lessonAnchor": "app/page.tsx#free-fall",
+      "purpose": "Show increasing downward speed over equal time intervals while gravitational acceleration remains constant.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "Five snapshots show the same ball at equal time intervals. The gaps and downward velocity arrows grow from top to bottom because gravity increases the ball's downward speed. The downward acceleration remains constant when air resistance is ignored.",
+      "prompt": "Use case: scientific-educational. Asset type: responsive lesson section illustration for first-year engineering students. Illustrate ideal free fall with five successive snapshots of the same ball descending vertically at equal time intervals. Increase gaps and downward velocity-arrow lengths from top to bottom; keep the downward acceleration cue constant. Use a clean flat vector-like scientific style with deep navy, cyan, yellow, restrained red, and a pale background. No text, letters, numerals, equations, labels, logos, watermark, scenery, impact, horizontal motion, or decorative clutter."
+    },
+    {
+      "id": "generated-projectile-motion-illustration",
+      "path": "public/illustrations/projectile-motion.webp",
+      "sha256": "21582e87baf6882ef1bf3ae72e23a3acd85b166bcdbad8249dded7ffed2e7492",
+      "lessonAnchor": "app/page.tsx#projectile-motion",
+      "purpose": "Show one parabolic trajectory as constant horizontal motion combined with gravity-driven vertical motion.",
+      "rightsEvidence": "Generated specifically for this lesson after teacher approval; no third-party asset supplied.",
+      "textEquivalent": "Six snapshots follow a parabolic path at equal time intervals. Their horizontal spacing stays nearly equal because horizontal velocity is constant. The vertical velocity points upward at first, becomes zero at the highest point, then grows downward under gravity.",
+      "prompt": "Use case: scientific-educational. Asset type: responsive lesson section illustration for first-year engineering students. Illustrate one object following a parabolic path from left to right using six equal-time snapshots with equal horizontal spacing. Decompose the launch velocity into horizontal and vertical components; keep horizontal motion constant while vertical arrows turn downward under gravity. Use a clean flat vector-like scientific style with deep navy, cyan, yellow, restrained red, and a pale background. No text, letters, numerals, equations, labels, logos, watermark, scenery, photorealism, or decorative clutter."
+    }
+  ]
+}

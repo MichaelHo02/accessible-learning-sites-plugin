@@ -1,0 +1,572 @@
+.ali-representations,
+.ali-steps,
+.ali-vocabulary,
+.ali-figure,
+.ali-physical,
+.ali-choice,
+.ali-typed,
+.ali-relationship-explorer,
+.ali-audio-transcript,
+.ali-point-heading,
+.ali-slide-transcript,
+.ali-auslan {
+  max-width: 100%;
+}
+
+.ali-representations-intro {
+  margin-block-end: 1rem;
+}
+
+.ali-representation-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ali-representation,
+.ali-steps details,
+.ali-data-alternative,
+.ali-typed details {
+  color: var(--als-text);
+  background: var(--als-surface);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.65rem;
+}
+
+.ali-representation summary,
+.ali-steps summary,
+.ali-data-alternative summary,
+.ali-typed summary {
+  min-height: 2.75rem;
+  padding: 0.7rem 0.85rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ali-representation-label,
+.ali-representation-summary {
+  display: block;
+}
+
+.ali-representation-summary {
+  margin-block-start: 0.2rem;
+  color: var(--als-muted);
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
+.ali-representation-content,
+.ali-step-content,
+.ali-data-alternative > div,
+.ali-typed details > div {
+  padding: 0.25rem 1rem 1rem;
+}
+
+.ali-steps {
+  display: grid;
+  gap: 0.75rem;
+  padding-inline-start: 2rem;
+  list-style: none;
+}
+
+.ali-steps > li {
+  padding-inline-start: 0.25rem;
+}
+
+.ali-step-number {
+  color: var(--als-accent);
+}
+
+.ali-vocabulary {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.ali-vocabulary > div {
+  padding: 0.85rem 1rem;
+  background: var(--als-surface);
+  border-inline-start: var(--als-emphasis-width) solid var(--als-accent);
+}
+
+.ali-vocabulary dt {
+  font-weight: 700;
+}
+
+.ali-vocabulary dd {
+  margin: 0.25rem 0 0;
+}
+
+.ali-vocabulary-example {
+  display: block;
+  margin-block-start: 0.5rem;
+}
+
+.ali-figure,
+.ali-physical,
+.ali-choice,
+.ali-typed,
+.ali-relationship-explorer {
+  padding: 1rem;
+  background: var(--als-surface);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.75rem;
+}
+
+.ali-audio-transcript,
+.ali-slide-transcript,
+.ali-auslan {
+  padding: 1rem;
+  background: var(--als-surface);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.75rem;
+}
+
+.ali-audio-player audio,
+.ali-auslan-video video {
+  width: 100%;
+  max-width: 100%;
+}
+
+.ali-audio-chapters ol,
+.ali-transcript ol {
+  display: grid;
+  gap: 0.65rem;
+  padding-inline-start: 1.5rem;
+  list-style: none;
+}
+
+.ali-audio-chapters button,
+.ali-point-heading-toggle,
+.ali-point-transcript-play,
+.ali-transcript button {
+  min-height: 2.75rem;
+  padding: 0.45rem 0.65rem;
+  color: var(--als-text);
+  background: var(--als-background);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ali-audio-chapters button {
+  text-align: start;
+}
+
+.ali-point-heading {
+  margin-block: 1.25rem 0.75rem;
+}
+
+.ali-point-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ali-point-heading-row > :is(h2, h3) {
+  min-width: 0;
+  margin: 0;
+}
+
+.ali-point-heading-actions {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.ali-point-heading-toggle {
+  white-space: nowrap;
+}
+
+.ali-point-transcript-panel {
+  padding: 0.85rem 1rem 1rem;
+  color: var(--als-text);
+  background: var(--als-surface);
+  border-block-end: var(--als-divider-width) solid var(--als-border);
+}
+
+.ali-point-transcript-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.ali-point-transcript-intro p {
+  margin: 0;
+}
+
+.ali-point-transcript-intro span {
+  color: var(--als-muted);
+}
+
+.ali-timestamp {
+  display: inline-block;
+  min-width: 4.5em;
+  font-variant-numeric: tabular-nums;
+}
+
+.ali-transcript > ol > li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.65rem;
+  border-inline-start: var(--als-emphasis-width) solid transparent;
+}
+
+.ali-transcript > ol > li.ali-transcript-active {
+  background: var(--als-accent-soft);
+  border-inline-start-color: var(--als-accent);
+}
+
+.ali-transcript-note,
+.ali-audio-help,
+.ali-slide-help,
+.ali-slide-note,
+.ali-auslan-status {
+  margin-block: 0.35rem 0;
+  color: var(--als-muted);
+}
+
+.ali-slide-picker {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 36rem;
+}
+
+.ali-slide-picker label {
+  font-weight: 700;
+}
+
+.ali-slide-picker select,
+.ali-slide-controls button,
+.ali-slide-cues button {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.7rem;
+  color: var(--als-text);
+  background: var(--als-background);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+.ali-slide-picker select {
+  width: 100%;
+}
+
+.ali-slide-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 0.75rem;
+}
+
+.ali-slide-controls button,
+.ali-slide-cues button {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ali-slide-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.ali-slide-current {
+  padding: 0.75rem;
+  background: var(--als-accent-soft);
+  border-inline-start: var(--als-emphasis-width) solid var(--als-accent);
+}
+
+.ali-slide-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.ali-slide-figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.ali-slide-visual {
+  overflow-x: auto;
+}
+
+.ali-slide-visual > * {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.ali-slide-figure figcaption {
+  margin-block-start: 0.5rem;
+  font-weight: 700;
+}
+
+.ali-slide-text {
+  margin-block-start: 0.75rem;
+  color: var(--als-text);
+  background: var(--als-background);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.5rem;
+}
+
+.ali-slide-text summary {
+  min-height: 2.75rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ali-slide-text > div {
+  padding: 0 0.85rem 0.85rem;
+}
+
+.ali-slide-cues {
+  max-height: 38rem;
+  overflow-y: auto;
+  overscroll-behavior-block: contain;
+}
+
+.ali-slide-cues h3 {
+  margin-block-start: 0;
+}
+
+.ali-slide-cues ol {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-inline-start: 1.5rem;
+  list-style: none;
+}
+
+.ali-slide-cues li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+@media (max-width: 56rem) {
+  .ali-slide-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ali-slide-cues {
+    max-height: none;
+  }
+}
+
+.ali-figure {
+  margin-inline: 0;
+}
+
+.ali-figure-visual-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  overscroll-behavior-inline: contain;
+}
+
+.ali-figure-visual,
+.ali-figure-visual > * {
+  max-width: 100%;
+}
+
+.ali-figure figcaption {
+  margin-block-start: 0.75rem;
+  font-weight: 700;
+}
+
+.ali-figure-description {
+  margin-block-start: 0.5rem;
+}
+
+.ali-data-alternative {
+  margin-block-start: 1rem;
+}
+
+.ali-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.ali-relationship-current {
+  padding: 0.75rem;
+  background: var(--als-accent-soft);
+  border-inline-start: var(--als-emphasis-width) solid var(--als-accent);
+}
+
+.ali-relationship-progress {
+  margin-block-start: 0;
+  color: var(--als-muted);
+  font-size: 0.875em;
+  font-weight: 700;
+}
+
+.ali-relationship-statement {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  font-size: 1.125em;
+}
+
+.ali-relationship-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-block: 1rem;
+}
+
+.ali-relationship-list-title {
+  margin-block-end: 0.5rem;
+}
+
+.ali-relationship-list {
+  margin-block: 0;
+}
+
+.ali-relationship-list li + li {
+  margin-block-start: 0.65rem;
+}
+
+.ali-physical h3,
+.ali-digital-alternative h3 {
+  margin-block-end: 0.35rem;
+  font-size: 1em;
+}
+
+.ali-digital-alternative {
+  margin-block-start: 1rem;
+  padding-block-start: 1rem;
+  border-block-start: var(--als-divider-width) solid var(--als-border);
+}
+
+.ali-choice {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  margin: 0;
+}
+
+.ali-choice legend,
+.ali-typed-prompt,
+.ali-typed label {
+  font-weight: 700;
+}
+
+.ali-choice-options {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.ali-choice-options label {
+  display: flex;
+  min-height: 2.75rem;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.65rem;
+  border: var(--als-divider-width) solid var(--als-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.ali-choice-options input {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 auto;
+}
+
+.ali-choice button,
+.ali-relationship-controls button {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  color: var(--als-on-accent);
+  background: var(--als-accent);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.ali-choice button:disabled,
+.ali-relationship-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.ali-feedback:empty {
+  min-height: 0;
+}
+
+.ali-feedback:not(:empty) {
+  padding: 0.75rem;
+  background: var(--als-accent-soft);
+  border-inline-start: var(--als-emphasis-width) solid var(--als-accent);
+}
+
+.ali-ephemeral-note {
+  margin: 0;
+  color: var(--als-muted);
+  font-size: 0.875em;
+}
+
+.ali-typed {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.ali-typed-prompt {
+  margin: 0;
+}
+
+.ali-typed textarea {
+  width: 100%;
+  min-height: 8rem;
+  padding: 0.7rem;
+  color: var(--als-text);
+  background: var(--als-background);
+  border: var(--als-control-border-width) solid var(--als-border);
+  border-radius: 0.5rem;
+  font: inherit;
+  resize: vertical;
+}
+
+@media (forced-colors: active) {
+  .ali-choice button,
+  .ali-relationship-controls button,
+  .ali-feedback,
+  .ali-relationship-current,
+  .ali-slide-current,
+  .ali-slide-text,
+  .ali-point-heading-toggle,
+  .ali-point-transcript-panel,
+  .ali-vocabulary > div,
+  .ali-transcript > ol > li.ali-transcript-active {
+    border: var(--als-control-border-width) solid CanvasText;
+  }
+}
+
+@media (max-width: 42rem) {
+  .ali-point-heading-row,
+  .ali-point-transcript-intro {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ali-point-heading-actions {
+    justify-content: flex-start;
+  }
+
+  .ali-point-heading-toggle {
+    white-space: normal;
+  }
+}
