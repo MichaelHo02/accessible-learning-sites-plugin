@@ -1632,15 +1632,15 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
 
   assert.match(instructions, /visual-quality-standard\.md/);
   assert.match(instructions, /first viewport a clear lesson identity, objective, and next action/);
-  assert.match(instructions, /preserve a rights-cleared asset, rebuild it\s+semantically, generate one purpose-specific asset, or use no visual/i);
-  assert.match(instructions, /same resolved semantic tokens and motif rules for every lesson-\s+specific interaction and generated visualization/);
-  assert.match(instructions, /read their resolved values from\s+the interaction root instead of hard-coding a second visual language/);
-  assert.match(instructions, /Theme fidelity is compositional, not palette-only/);
+  assert.match(quality, /preserve a rights-cleared source asset[\s\S]*rebuild the relationship[\s\S]*purpose-specific asset[\s\S]*use no visual/i);
+  assert.match(instructions, /same resolved semantic tokens and motif rules\s+for every lesson-specific interaction and generated visualization/);
+  assert.match(instructions, /read their\s+resolved values from the interaction root rather than hard-coding another\s+visual language/);
+  assert.match(instructions, /Theme fidelity\s+is compositional, not palette-only/);
   assert.match(instructions, /dominant composition pattern[\s\S]*first viewport and recurring section\s+framing/);
-  assert.match(instructions, /visual-style extraction checkpoint before writing lesson CSS/);
+  assert.match(instructions, /materialStyle\.representativeViews[\s\S]*materialStyle\.surfaceMapping[\s\S]*before\s+CSS/);
   assert.match(instructions, /materialStyle\.representativeViews/);
   assert.match(instructions, /materialStyle\.surfaceMapping/);
-  assert.match(instructions, /Kinematics trial as a process and quality benchmark, not as a design\s+template/);
+  assert.match(instructions, /Kinematics trial as a process and quality benchmark, not as a\s+design template/);
   assert.match(instructions, /Read only the source and reference sections relevant to this lesson/);
   assert.match(instructions, /document\.documentElement\.scrollWidth <= document\.documentElement\.clientWidth/);
   assert.match(instructions, /Do not set\s+bare MathML to `min-width: max-content`/);
@@ -1672,6 +1672,22 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
   assert.match(audioGuidance, /instead of creating a separate transcript chapter/);
   assert.match(audioGuidance, /pair each visual\s+with its source-mapped transcript range/);
   assert.match(instructions, /abstract marker and a familiar object/);
+  assert.match(
+    instructions,
+    /settings panel and section navigation in the normal\s+document flow as one measured reading column/,
+  );
+  assert.match(
+    instructions,
+    /diagram teaches a variable relationship[\s\S]*primary rendered view\s+the live model/,
+  );
+  assert.match(
+    quality,
+    /settings and section navigation inline in the normal\s+reading flow/,
+  );
+  assert.match(
+    quality,
+    /diagram itself must be the live view or sit directly with its controls/,
+  );
   assert.match(quality, /starter copy, placeholder assets/);
   assert.match(workflow, /Run the smallest automatic checks that protect the generated result/);
   assert.match(workflow, /After a successful build[^.]*create the Site/);

@@ -51,6 +51,8 @@ lesson:
 - style native tables, code, math, figures, media, forms, feedback, and status
   messages as parts of one visual system while preserving their semantics;
 - use responsive layouts only where reading and focus order remain logical;
+- keep the standardized settings and section navigation inline in the normal
+  reading flow; do not turn them into a desktop sidebar or a two-column shell;
 - remove starter copy, placeholder assets, generic dashboard chrome, broken or
   empty regions, clipped content, accidental horizontal page scrolling, and
   unfinished default styling before Site creation.
@@ -94,6 +96,11 @@ relationship over a decorative click target. Keep these elements together:
 - a visible explanation and conclusion;
 - the literal source anchor; and
 - a complete ordered-list, table, text, or MathML alternative.
+
+When a diagram is the primary explanation of that changing relationship, the
+diagram itself must be the live view or sit directly with its controls and
+changing result. Do not separate a static explanatory diagram from the matching
+interaction elsewhere in the section.
 
 Do not force a bespoke visualization when the lesson's purposeful interaction
 is better expressed by a native choice, typed response, transcript control, or
