@@ -28,6 +28,8 @@
       "Write"
     ],
     "websiteURL": "https://github.com/MichaelHo02/accessible-learning-sites",
+    "privacyPolicyURL": "https://example.com/accessible-learning-sites/privacy-policy",
+    "termsOfServiceURL": "https://example.com/accessible-learning-sites/terms-of-service",
     "defaultPrompt": [
       "Turn today's lesson materials into an accessible lesson Site.",
       "Create an accessible math lesson Site for my class.",

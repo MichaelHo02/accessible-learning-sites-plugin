@@ -93,6 +93,12 @@ and teacher iteration loop.
 For a prerecorded lecture or other audio-grounded lesson, also read and follow
 [references/audio-accessibility.md](references/audio-accessibility.md).
 
+Read only the source and reference sections relevant to this lesson. Do not
+open sibling recordings, unrelated lessons, or the Kinematics trial unless the
+teacher supplied that material or it addresses the same content-specific
+problem. Give specialists a bounded source packet, not raw source material they
+do not need.
+
 Use the active environment's local-file PDF, document, presentation, and
 spreadsheet capabilities to read `.pdf`, `.docx`, `.pptx`, `.xlsx`, and `.csv`
 lesson sources from the workspace. Treat them as workspace inputs, not cloud
@@ -283,6 +289,14 @@ coverage while avoiding a long wall of identical cards. Remove starter copy,
 placeholder assets, broken or empty regions, accidental page overflow, and
 unfinished default styling before creating the Site.
 
+When a local preview is available, inspect both a normal desktop viewport and
+320 CSS pixels before creation. At 320, verify
+`document.documentElement.scrollWidth <= document.documentElement.clientWidth`.
+Fix page-level overflow; only a labelled table, code, diagram, or math region
+may scroll horizontally within its own keyboard-reachable container. Do not set
+bare MathML to `min-width: max-content` or leave it inside an ordinary grid;
+use `AccessibleMathRegion` for equations that need horizontal scrolling.
+
 Colour support does not replace this source-derived styling step. After copying
 the kit, populate its `--als-source-*` and `--als-source-dark-*` semantic input
 tokens in the lesson stylesheet from the recorded `materialStyle`, including
@@ -413,6 +427,11 @@ imports. Use the exact native-first components when relevant:
   `RelationshipExplorer`;
 - `PhysicalActivity`, `ChoiceActivity`, and `TypedResponseActivity`.
 
+The rendered lesson must be that app route. Do not create a separate root
+`index.html` and stylesheet or a fake build that only copies those files. A
+local-only static export is allowed only when it is produced from the checked
+lesson app, and the rendered checks must target that export.
+
 For code and state traces, use labelled native `pre`/`code`, `StepByStep`, and
 `DataTableRegion`; show exact code, ordered changes, complete relevant state,
 and the conclusion without a syntax-highlighting dependency. Make overflowing
@@ -429,38 +448,11 @@ its `sections` entry so section-by-section reading remains complete.
 Use upright normal or bold text. Do not use italics or underline non-link text;
 keep link underlines so links remain identifiable without colour alone.
 
-For an audio-grounded lesson, original playback is optional and never the only
-complete pathway. Include the visible timestamped transcript, speaker and
-uncertainty information, chapters when useful, and repaired slide references.
-When the teacher explicitly authorizes hosting the supplied recording, include
-one native audio player with `controls`, `preload="metadata"`, and no autoplay;
-do not substitute the transcript for available authorized playback. When
-hosting is not authorized, omit the recording and keep that publication blocker
-in the teacher-only ledger and handoff rather than rendering dead controls or a
-rights warning in the student lesson.
-For a long lecture already rebuilt as lesson content, use one compact native
-player immediately after the lesson shell introduction and before the first
-lesson section; do not place the player or a standalone transcript chapter at
-the bottom of the lesson; divide every transcript cue exactly once between matching
-`LecturePointHeading` controls. Each labelled button exposes `aria-expanded`
-and `aria-controls` for the adjacent transcript panel, opens it without moving
-focus, and keeps the transcript beside the concept it explains instead of
-creating a separate transcript chapter. This control is JavaScript-enhanced,
-so the rebuilt lesson content must remain complete when it is unavailable. Keep
-`AudioTranscript` for short media that benefits from one player-and-transcript
-block.
-When reviewed timing maps cues to individual slides or pages, place the matching
-transcript range beside every mapped slide or concept with
-`SlideTranscriptViewer` or `LecturePointHeading`. Render an honest no-match
-state for an unmatched slide; never move all mapped transcript text into a
-detached end section.
-When reviewed timing aligns source slides or pages to transcript cues, use
-`SlideTranscriptViewer`. Supply literal local rights-cleared source visuals,
-complete visible `textEquivalent` content, and honest alignment notes; use null
-timing when a slide has no exact spoken match. A summary does not replace the
-transcript. An automatically generated Auslan draft is optional and visibly
-unverified. The plugin does not validate sign-language accuracy or emit a
-human-reviewed claim.
+For audio-grounded lessons, follow
+[audio-accessibility.md](references/audio-accessibility.md): use an authorized
+native player only when it can be hosted, keep the complete transcript visible
+beside its matching concepts, and preserve honest timing, rights, and review
+limits in the external ledger and handoff.
 
 ### 5. Create the Site and iterate
 
@@ -496,6 +488,7 @@ treat this smoke pass as accessibility or assistive-technology evidence.
 - Never widen access. The teacher decides whether to share the Site with the
   class or publicly through the Sites UI.
 
-Use
+Consult
 [references/trials/kinematics-fundamentals.md](references/trials/kinematics-fundamentals.md)
-as the real-content composition and audio reference.
+only for matching kinematics or audio/transcript work; it is a real-content
+composition reference, not a required context file for every lesson.

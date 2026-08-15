@@ -178,6 +178,10 @@ test(
       path.join(skillRoot, "references", "workflow.md"),
       "utf8",
     );
+    const audioGuidance = await readFile(
+      path.join(skillRoot, "references", "audio-accessibility.md"),
+      "utf8",
+    );
 
     assert.match(
       instructions,
@@ -206,12 +210,12 @@ test(
     );
     assert.match(instructions, /Do not create a social sharing card, Open Graph image, link-unfurl artwork/);
     assert.match(instructions, /overrides any\s+general Sites-builder default/);
-    assert.match(instructions, /divide every transcript cue exactly once/);
+    assert.match(audioGuidance, /divide every cue\s+exactly once/);
     assert.match(instructions, /Do not copy that metadata\s+into the student lesson, a global warning, or the lesson footer/);
     assert.match(instructions, /An unresolved answer boundary is not an interaction/);
     assert.match(instructions, /do not create an\s+`Attempt and reveal`, disclosure, or dropdown/);
-    assert.match(instructions, /explicitly authorizes hosting the supplied recording/);
-    assert.match(instructions, /one native audio player with `controls`, `preload="metadata"`, and no autoplay/);
+    assert.match(instructions, /authorized\s+native player only when it can be hosted/);
+    assert.match(audioGuidance, /native controls,\s+`preload="metadata"`, and no autoplay/);
   },
 );
 
@@ -1613,6 +1617,10 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
     path.join(skillRoot, "references", "visual-quality-standard.md"),
     "utf8",
   );
+  const audioGuidance = await readFile(
+    path.join(skillRoot, "references", "audio-accessibility.md"),
+    "utf8",
+  );
   const kitCss = await readFile(
     path.join(kitRoot, "accessible-learning.css"),
     "utf8",
@@ -1633,6 +1641,11 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
   assert.match(instructions, /materialStyle\.representativeViews/);
   assert.match(instructions, /materialStyle\.surfaceMapping/);
   assert.match(instructions, /Kinematics trial as a process and quality benchmark, not as a design\s+template/);
+  assert.match(instructions, /Read only the source and reference sections relevant to this lesson/);
+  assert.match(instructions, /document\.documentElement\.scrollWidth <= document\.documentElement\.clientWidth/);
+  assert.match(instructions, /Do not set\s+bare MathML to `min-width: max-content`/);
+  assert.match(instructions, /Do not create a separate root\s+`index\.html` and stylesheet or a fake build/);
+  assert.match(instructions, /only for matching kinematics or audio\/transcript work/);
   assert.match(instructions, /Source pagination is provenance, not the default student interface/);
   assert.match(instructions, /do\s+not plan one\s+rendered card, tile, thumbnail, or mini-slide per source page/);
   assert.match(instructions, /Organize the student-facing lesson by concept, relationship, example, and\s+learner task/);
@@ -1655,8 +1668,8 @@ test("every lesson follows the source-grounded visual quality and imagery decisi
   assert.match(quality, /A circular object must still read as circular/);
   assert.match(instructions, /A core simulator is required content/);
   assert.match(instructions, /Do not use\s+`RepresentationGroup`, `Representation`, or `StepByStep`/);
-  assert.match(instructions, /do not place the player or a standalone transcript chapter at\s+the bottom/);
-  assert.match(instructions, /beside every mapped slide or concept/);
+  assert.match(audioGuidance, /instead of creating a separate transcript chapter/);
+  assert.match(audioGuidance, /pair each visual\s+with its source-mapped transcript range/);
   assert.match(instructions, /abstract marker and a familiar object/);
   assert.match(quality, /starter copy, placeholder assets/);
   assert.match(workflow, /Run the smallest automatic checks that protect the generated result/);

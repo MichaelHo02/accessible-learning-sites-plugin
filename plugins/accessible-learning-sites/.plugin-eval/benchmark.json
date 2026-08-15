@@ -1,0 +1,57 @@
+{
+  "kind": "plugin-eval-benchmark",
+  "schemaVersion": 2,
+  "version": 2,
+  "targetKind": "plugin",
+  "targetName": "accessible-learning-sites",
+  "runner": {
+    "type": "codex-cli",
+    "model": "gpt-5.6-luna",
+    "sandbox": "workspace-write",
+    "approvalPolicy": "never",
+    "extraArgs": [
+      "-c",
+      "model_reasoning_effort=\"high\""
+    ]
+  },
+  "workspace": {
+    "sourcePath": "materials/Engineering Science/W1 - Lecture - Course Introduction + Motions",
+    "setupMode": "copy",
+    "preserve": "always"
+  },
+  "targetProvisioning": {
+    "mode": "workspace-plugin-marketplace"
+  },
+  "verifiers": {
+    "commands": [
+      "node --test plugins/accessible-learning-sites/skills/create-accessible-learning-site/tests/plugin-assets.test.mjs"
+    ]
+  },
+  "notes": [
+    "This scenario converts one Engineering Science PDF into one local teacher-reviewable lesson app; recordings are deliberately out of scope for this PDF-only evaluation.",
+    "Copied workspaces are retained for manual source-fidelity and visual review; this benchmark does not cover Sites integration or deployment.",
+    "Benchmark means real codex exec runs now. There is no simulated dry-run mode."
+  ],
+  "setupQuestions": [
+    "Do the generated Sites preserve the source lesson objective, sequence, difficulty, success criteria, and response expectations?",
+    "Does each Site provide source-traceable, accessible alternatives for meaningful equations, diagrams, and activities?",
+    "Do the fast checks pass before the local static site is completed, with any unavailable check reported honestly?",
+    "Does the agent create exactly one local static lesson site for the source PDF and retain visual-review evidence?",
+    "Does the agent avoid student accounts, tracking, grading, networking, and use of the sibling recordings without explicit authorization?"
+  ],
+  "scenarios": [
+    {
+      "id": "week-1-course-introduction-motion",
+      "title": "Week 1: Course Introduction + Motion",
+      "purpose": "Measure a one-source lesson conversion covering physical units, dimensional analysis, vectors, and motion parameters.",
+      "userInput": "Use the local Codex plugin \"accessible-learning-sites\" to turn exactly one source PDF into one local, teacher-reviewable accessibility-first lesson app: W1 - Lecture - Course Introduction + Motions.pdf. Preserve the source sequence and academic expectations for physical units, dimensional analysis, vectors, vector arithmetic, and motion parameters. Rebuild meaningful equations and diagrams with native semantic alternatives and keep the objective, examples, and expected reasoning equivalent. Use the bundled five-file lesson-site kit in the rendered app route; do not satisfy this task with a separate root static HTML page or a copy-only build. Do not use the sibling recording in this PDF-only run. Do not create, update, publish, or deploy through Sites. Keep the completed local app and visual-review evidence in the workspace. When local rendering is available, inspect desktop and 320 CSS pixels, record the measured document scroll width and client width, and fix page-level horizontal overflow; otherwise report that visual inspection was unavailable. Run the plugin's fast checks against the rendered app or its actual static export before completing; report each observed result and any limitation honestly. Do not add accounts, analytics, grading, student tracking, networking, or cross-day persistence.",
+      "successChecklist": [
+        "One local lesson app is created from the Week 1 PDF only, with no Sites creation, publishing, or deployment.",
+        "The lesson preserves the source sequence, units, vector reasoning, and motion concepts without lowering the academic expectation.",
+        "Meaningful equations and diagrams have source-traceable semantic or equivalent pathways.",
+        "Desktop and 320 CSS-pixel visual-review evidence records document scroll width and client width when locally available; otherwise the limitation is reported.",
+        "Observed fast-check results and unresolved limitations are reported without claiming certification."
+      ]
+    }
+  ]
+}

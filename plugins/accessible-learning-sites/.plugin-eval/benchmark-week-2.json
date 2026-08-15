@@ -1,0 +1,57 @@
+{
+  "kind": "plugin-eval-benchmark",
+  "schemaVersion": 2,
+  "version": 2,
+  "targetKind": "plugin",
+  "targetName": "accessible-learning-sites",
+  "runner": {
+    "type": "codex-cli",
+    "model": "gpt-5.6-luna",
+    "sandbox": "workspace-write",
+    "approvalPolicy": "never",
+    "extraArgs": [
+      "-c",
+      "model_reasoning_effort=\"high\""
+    ]
+  },
+  "workspace": {
+    "sourcePath": "materials/Engineering Science/W2 - Lecture - Kinematics",
+    "setupMode": "copy",
+    "preserve": "always"
+  },
+  "targetProvisioning": {
+    "mode": "workspace-plugin-marketplace"
+  },
+  "verifiers": {
+    "commands": [
+      "node --test plugins/accessible-learning-sites/skills/create-accessible-learning-site/tests/plugin-assets.test.mjs"
+    ]
+  },
+  "notes": [
+    "This isolated Week 2 configuration avoids sending sibling weeks or recordings to the model.",
+    "Copied workspaces are retained for manual source-fidelity and visual review; this benchmark does not cover Sites integration or deployment.",
+    "Benchmark means real Codex runs. There is no simulated dry-run mode."
+  ],
+  "setupQuestions": [
+    "Does the generated app preserve the source lesson objective, sequence, difficulty, success criteria, and response expectations?",
+    "Does it provide source-traceable, accessible alternatives for equations, diagrams, and activities?",
+    "Does the rendered app reflow at 320 CSS pixels without page-level horizontal scrolling?",
+    "Do the fast checks run against the lesson app or its actual static export, with unavailable checks reported honestly?",
+    "Does the agent avoid student accounts, tracking, grading, networking, and use of the sibling recording without explicit authorization?"
+  ],
+  "scenarios": [
+    {
+      "id": "week-2-kinematics",
+      "title": "Week 2: Kinematics",
+      "purpose": "Measure a one-source kinematics conversion covering velocity, acceleration, constant-acceleration motion, free fall, projectile motion, and relative motion.",
+      "userInput": "Use the local Codex plugin \"accessible-learning-sites\" to turn exactly one source PDF into one local, teacher-reviewable accessibility-first lesson app: W2+-+Lecture+-+Kinematics.pdf. Preserve the source sequence and academic expectations for one- and two-dimensional kinematics, equations, derivations, worked examples, and expected reasoning. Rebuild meaningful equations, diagrams, and variable relationships with native semantic alternatives and at least one source-grounded purposeful interaction. Use the bundled five-file lesson-site kit in the rendered app route; do not satisfy this task with a separate root static HTML page or a copy-only build. Do not use the sibling recording or transcription in this PDF-only run. Do not create, update, publish, or deploy through Sites. Keep the completed local app and visual-review evidence in the workspace. When local rendering is available, inspect desktop and 320 CSS pixels, record the measured document scroll width and client width, and fix page-level horizontal overflow; otherwise report that visual inspection was unavailable. Run the plugin's fast checks against the rendered app or its actual static export before completing; report each observed result and any limitation honestly. Do not add accounts, analytics, grading, student tracking, networking, or cross-day persistence.",
+      "successChecklist": [
+        "One local lesson app is created from the Week 2 PDF only, with no Sites creation, publishing, or deployment.",
+        "The lesson preserves source order, kinematics reasoning, equations, derivations, and worked examples without lowering academic expectation.",
+        "Meaningful equations, diagrams, and variable relationships have source-traceable semantic or equivalent pathways.",
+        "Desktop and 320 CSS-pixel visual-review evidence records document scroll width and client width when locally available; otherwise the limitation is reported.",
+        "Observed fast-check results and unresolved limitations are reported without claiming certification."
+      ]
+    }
+  ]
+}
